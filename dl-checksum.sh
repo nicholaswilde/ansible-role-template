@@ -25,8 +25,7 @@ dl() {
     local url=$MIRROR/v$ver/$file
     local lfile=$DIR/$file
 
-    if [ ! -e $lfile ];
-    then
+    if [ ! -e $lfile ]; then
         wget -q -O $lfile $url
     fi
 
