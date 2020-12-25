@@ -13,6 +13,9 @@ app_install_dir: /usr/local/bin
 # when it's true, requires ansible 2.8+
 app_use_online_checksum: true
 
+# Command line argument to verify installation
+verify_arg: '--version'
+
 app_checksums:
   '0.5.7':
     # https://github.com/fluxcd/flux2/releases/download/v0.5.7/flux_0.5.7_darwin_amd64.tar.gz
