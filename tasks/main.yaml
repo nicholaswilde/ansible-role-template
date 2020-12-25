@@ -52,7 +52,7 @@
         path: /tmp/{{ app_archive }}
         state: absent
 
-- name: Make a link
+- name: Make a link from {{ app_install_exe }} to {{ app_install_link }}
   file:
     src: '{{ app_install_exe }}'
     dest: '{{ app_install_link }}'
